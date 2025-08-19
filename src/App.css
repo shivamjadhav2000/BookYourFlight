@@ -1,0 +1,76 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: white;
+}
+
+.logos img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.controls {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.controls input {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.main {
+  display: flex;
+  height: 600px;
+}
+
+.map-container {
+  flex: 2;
+}
+
+.sidebar {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 1rem;
+  border-left: 2px solid #eee;
+}
+
+.city-card {
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.city-card:hover {
+  background-color: #cce7ff;
+  transform: translateY(-3px);
+}
+
+.city-card.visited {
+  background-color: #d4edda;
+}
+
+.visited-badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  background-color: #28a745;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
